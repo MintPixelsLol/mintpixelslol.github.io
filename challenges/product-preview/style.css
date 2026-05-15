@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --radius: 10px;
+}
+
+body {
+    background-color: hsl(30, 38%, 92%);
+    color: hsl(228, 12%, 48%);
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product {
+    -ms-transform: translate(0, 50%);
+    transform: translate(0, 50%);
+    width: 75%;
+    display: flex;
+    background-color: white;
+    border-radius: var(--radius);
+    flex-direction: row;
+}
+
+h3 {
+    text-transform:uppercase;
+    letter-spacing: 5px;
+    color: hsl(228, 12%, 48%);
+}
+
+h1 {
+    font-family: "Fraunces", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:
+        "SOFT" 0,
+        "WONK" 0;
+    color: hsl(212, 21%, 14%);
+
+}
+
+.price {
+    color: hsl(158, 36%, 37%);
+    font-family: "Fraunces", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:
+        "SOFT" 0,
+        "WONK" 0;
+    font-size: xx-large;
+}
+
+.origprice {
+    color: hsl(228, 12%, 48%);
+    text-decoration: line-through;
+    font-size: small;
+    margin: 0 0 0 10px;
+    padding-bottom: 15px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+button {
+    background-color: hsl(158, 36%, 37%);
+    color:hsl(0, 0%, 100%);
+    border: 0;
+    font-weight: 700;
+    width:100%;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px 0 0 0;
+}
+
+button img {
+    margin-right: 10px;
+}
+
+button:hover {
+    background-color: hsl(158, 42%, 18%);
+}
+
+.prodimg {
+    height: 100%;
+    width: 100%;
+    border-radius: var(--radius) 0 0 var(--radius);
+    image-rendering: optimizeQuality;
+
+}
+
+.prodtxt {
+    padding: 30px;
+}
+
+.desc {
+    line-height: 25px;
+}
